@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphy App</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/giphy.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body id="entireContents">
+
+<div class="jumbotron" id="header">
+  <img id="topImageL" src="images/giphy-left.gif">
+  <img id="topImageR" src="images/giphy-right.gif">
+  <h1>For Netflix Shows</h1>
+  <h4>Click on the buttons below to show the GIF of your favorite Netflix shows<br>Click on the GIF to pause<br>Search and submit to add more show buttons</h4>
+</div>
+
+<form class="form-inline" id="netflixSearch">
+  <div class="form-group">
+    <label for="netflixInput">Search for a particular Netflix Show</label>
+    <input type="text" id="netflixInput">
+  </div>
+  
+  <input id="addShow" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="show" data-search="The Crown">The Crown</button>
+      <button class="btn btn-primary" id="show" data-search="13 Reason Why">13 Reason Why</button>
+      <button class="btn btn-primary" id="show" data-search="House of Cards">House of Cards</button>
+      <button class="btn btn-primary" id="show" data-search="Daredevil">Daredevil</button>
+      <button class="btn btn-primary" id="show" data-search="Bloodline">Bloodline</button>
+      <button class="btn btn-primary" id="show" data-search="Iron Fist">Iron Fist</button>
+      <button class="btn btn-primary" id="show" data-search="Fuller House">Fuller House</button>
+      <button class="btn btn-primary" id="show" data-search="Narcos">Narcos</button>
+      
+     <div id="myButtons"></div>
+    </div> 
+  </div> 
+</div> 
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div> 
+</div> 
+
+
+<script type="text/javascript" src="javascript/giphy.js"</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
